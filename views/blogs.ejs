@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+<main class=" container-fluid flex-grow-1 d-flex align-items-top justify-content-top">
+
+
+     <div class="container mt-5 align-items-top justify-content-top">
+        <h1 class="mb-4">Blog Posts</h1>
+        <div class="row">
+            <% blogs.forEach(post => { %>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"> <span><%=post.title.substring(0,32)%><%=post.title.length>32?"...":""%> <a href="/edit/<%= post.id %>" class="btn icons"></span><i class=" fa-lg fa-solid fa-pen-to-square"></i></a> <a href="/delete/<%= post.id %>" class="btn icons"><i class=" fa-lg fa-solid fa-trash"></i></a></h5>
+                            <p class="card-text"><%=post.story.substring(0,300)%><%=post.story.length>299?"...":""%></p>
+                            
+                            <a href="/read/<%= post.id %>" class="btn btn-coral">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+
+</main>
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs") %>
+    <main class="container-fluid flex-grow-1 d-flex align-items-center justify-content-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="form-container mb-5">
+                    <h1 class="text-center mb-4">New Blog Post</h1>
+                    <form method="post" action="/submit">
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Title</label>
+                            <input type="text" class="form-control" id="title" name="title" placeholder="Enter the title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="story" class="form-label">Story</label>
+                            <textarea class="form-control story-textarea" id="story" name="story" rows="10" placeholder="Write your Blog here"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-coral btn-lg">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+<%- include("partials/footer.ejs") %>

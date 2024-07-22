@@ -1,0 +1,125 @@
+
+.navbar-brand{
+    font-size: 28px;
+    padding-left: 10px;
+    padding-top: 0;
+    font-weight: bold;
+}
+ion-icon {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+
+.navbar-custom{
+    background-color: #1E3A8A; 
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #FFFFFF;
+}
+.navbar-custom .nav-link:hover {
+    color: #FF6F61; 
+}
+
+.footer-custom {
+    background-color: #1E3A8A; /* Navy Blue */
+    color: #FFFFFF; /* White */
+    padding: 20px 0;
+}
+.footer-custom a {
+    color: #FFFFFF; /* Soft Coral */
+    text-decoration: none;
+    margin: 0;
+}
+.footer-custom a:hover {
+    text-decoration: underline;
+    color: #38B2AC;
+}
+
+.footer-custom a ion-icon {
+    transition: transform 0.3s ease;
+}
+
+.footer-custom a ion-icon:hover {
+    transform: translateY(-15px);
+    color: #38B2AC;
+}
+
+html, body {
+    height: 100%;
+}
+
+main{
+    background-color: #F7F7F7;
+    color: #2C2C2C;
+}
+
+.main-text{
+    color: #2C2C2C;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.navbar-hidden{
+    padding-left: 1.3rem;
+}
+
+.main-btn{
+    background-color: #38B2AC; /* Soft Coral background color */
+    color: #ffffff; /* White text color */
+    border: none; /* Optional: Remove border */
+}
+.main-btn:hover {
+    background-color: #F88379; /* Darker coral for hover effect */
+    color: #ffffff; /* White text color on hover */
+}
+
+
+.form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 50px;
+}
+.btn-coral {
+    background-color: #38B2AC; /* Soft Coral background color */
+    color: #ffffff; /* White text color */
+    border: none; /* Optional: Remove border */
+}
+.btn-coral:hover {
+    background-color: #F88379; /* Darker coral for hover effect */
+    color: #ffffff; /* White text color on hover */
+}
+
+.story-textarea{
+    resize: none;
+}
+
+.reading-area{
+    max-width: 130vh;
+}
+
+.reading-form{
+    min-height: 60vh;
+    margin-bottom: 2vh;
+}
+
+.title-read{
+    padding-left: 30%;
+    padding-right: 30%;
+
+}
+
+.icons{
+    border-left: 0cm;
+    padding-left: 0;
+    display: inline-block;
+}
+
+
+.icons:hover{
+    color: #F88379;
+}
