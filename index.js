@@ -69,7 +69,6 @@ app.get('/read/:id', (req, res) => {
 app.get('/edit/:id',  (req, res) => {
     const id = parseInt(req.params.id, 10);
     const blogsPosted2 =  blogsPosted.find(elem =>  elem.id === id);
-    console.log(blogsPosted2.title);
     res.render("edit.ejs", {id: blogsPosted2.id ,title: blogsPosted2.title, story: blogsPosted2.story});
 });
 
